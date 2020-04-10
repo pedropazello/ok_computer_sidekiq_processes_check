@@ -9,7 +9,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'ok_computer_sidekiq_processeses_check'
+gem 'ok_computer_sidekiq_processeses_check', git: 'https://github.com/pedropazello/ok_computer_sidekiq_processes_check'
 ```
 
 And then execute:
@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-```
+```ruby
 # config/initializers/okcomputer.rb
 OkComputer::Registry.register "worker:process", OkComputerSidekiqProcessesesCheck::Base.new
 ```
