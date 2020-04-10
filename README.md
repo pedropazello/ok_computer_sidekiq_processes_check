@@ -22,7 +22,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+# config/initializers/okcomputer.rb
+OkComputer::Registry.register "worker:process", OkComputerSidekiqProcessesesCheck::Base.new
+```
 
 ## Development
 
